@@ -1,20 +1,18 @@
-# laravel-package-boilerplate
+# laravel-feed
 
-Boilerplate for Laravel packages. Use it as a starting point for your own Laravel packages.
+[![Build Status](https://travis-ci.org/matthewbdaly/laravel-feed.svg?branch=master)](https://travis-ci.org/matthewbdaly/laravel-feed)
+[![Coverage Status](https://coveralls.io/repos/github/matthewbdaly/laravel-feed/badge.svg?branch=master)](https://coveralls.io/github/matthewbdaly/laravel-feed?branch=master)
 
-Includes PHPUnit and PHPCodeSniffer configuration, as well as a known good Travis CI configuration and a couple of base test cases. Uses `orchestra/testbench` as the basis of the provided base test.
+Laravel service provider for using the Zend Framework feed package.
 
-Also includes my [Artisan Standalone](https://github.com/matthewbdaly/artisan-standalone) package as a development dependency. As a result, you should be able to run Artisan commands as follows:
-
-```bash
-vendor/bin/artisan make:model Example
-```
-
-How do I use it?
-----------------
+Installation
+------------
 
 ```bash
-composer create-project matthewbdaly/laravel-package-boilerplate <YOUR_NEW_PACKAGE_DIRECTORY>
+composer require matthewbdaly/laravel-feed
 ```
 
-This will generate a starting boilerplate for your app. You'll want to update your `composer.json` with your required namespace and other details - you can do this by running `vendor\bin\artisan app:name`.
+Usage
+-----
+
+Refer to the [Zend documentation](https://docs.zendframework.com/zend-feed/intro/) on how to use it. This package simply allows you to resolve the appropriate interfaces to instances of the reader, writer and PubSubHubbub implementations.
