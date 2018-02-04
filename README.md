@@ -16,3 +16,5 @@ Usage
 -----
 
 Refer to the [Zend documentation](https://docs.zendframework.com/zend-feed/intro/) on how to use it. This package simply allows you to resolve the appropriate interfaces to instances of the reader, writer and PubSubHubbub implementations.
+
+The implementation of the reader uses HTTPlug, so you will also need to install a client implementation [as specified here](http://docs.php-http.org/en/latest/httplug/users.html) in order to actually use this client. That way, you won't be locked into any particular HTTP client.
