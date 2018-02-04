@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelFeed\Providers;
+namespace Matthewbdaly\LaravelFeed\Providers;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-use LaravelFeed\Services\FeedService;
+use Matthewbdaly\LaravelFeed\Services\FeedService;
 use Zend\Feed\Reader\Reader;
 
 /**
@@ -18,12 +18,7 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function boot()
     {
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        $this->loadRoutesFrom(__DIR__.'/../../routes.php');
-        $this->loadViewsFrom(__DIR__.'/../views', 'packagename');
-        $this->publishes([
-            __DIR__.'/../views', resource_path('views/vendor/packagename')
-        ]);
+        //
     }
 
     /**

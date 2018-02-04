@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelFeed\Services;
+namespace Matthewbdaly\LaravelFeed\Services;
 
 use Http\Client\HttpClient;
 use Http\Message\MessageFactory;

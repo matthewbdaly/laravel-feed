@@ -34,7 +34,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "LaravelFeed\\": "src/"
+            "Matthewbdaly\\LaravelFeed\\": "src/"
         }
     },
     "autoload-dev": {
@@ -62,7 +62,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelFeed\\Providers\\ServiceProvider"
+                "Matthewbdaly\\LaravelFeed\\Providers\\ServiceProvider"
             ]
         }
     }
