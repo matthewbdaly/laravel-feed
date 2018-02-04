@@ -23,7 +23,8 @@
         "matthewbdaly/artisan-standalone": "0.0.*",
         "php-http/mock-client": "^1.0",
         "php-http/message": "^1.0",
-        "sebastian/phpcpd": "^3.0"
+        "sebastian/phpcpd": "^3.0",
+        "guzzlehttp/psr7": "^1.0"
     },
     "license": "MIT",
     "authors": [
