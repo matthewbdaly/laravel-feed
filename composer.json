@@ -1,6 +1,6 @@
 {
-    "name": "matthewbdaly/laravel-package-boilerplate",
-    "description": "Starting boilerplate for Laravel packages. Override the content in here when creating your own package",
+    "name": "matthewbdaly/laravel-feed",
+    "description": "Laravel service provider for using the Zend feed package",
     "type": "library",
     "keywords": ["laravel","lumen"],
     "require": {
@@ -34,7 +34,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Matthewbdaly\\LaravelPackageBoilerplate\\": "src/"
+            "LaravelFeed\\": "src/"
         }
     },
     "autoload-dev": {
@@ -62,7 +62,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Matthewbdaly\\LaravelPackageBoilerplate\\Providers\\ServiceProvider"
+                "LaravelFeed\\Providers\\ServiceProvider"
             ]
         }
     }

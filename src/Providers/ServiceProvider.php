@@ -1,8 +1,10 @@
 <?php
 
-namespace Matthewbdaly\LaravelPackageBoilerplate\Providers;
+namespace LaravelFeed\Providers;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use LaravelFeed\Services\FeedService;
+use Zend\Feed\Reader\Reader;
 
 /**
  * Service provider
@@ -31,6 +33,10 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind('Zend\Feed\Reader\ReaderImportInterface', function ($app) {
+            $reader = new Reader;
+            $reader->setHttpClient(new FeedService);
+            return $reader;
+        });
     }
 }
